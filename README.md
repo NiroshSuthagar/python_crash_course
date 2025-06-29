@@ -1,1 +1,1 @@
-# python_crash_course
+# 3 Week Python Course
