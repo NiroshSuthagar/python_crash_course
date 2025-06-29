@@ -58,7 +58,9 @@ You can add new items to a list using the `append()` method, which adds an ite
 
 
 fruits = ["apple", "banana"]
+
 fruits.append("cherry")
+
 print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
 To insert an item at a specific position, you can use the `insert()` method. It takes two arguments: the index and the value.
@@ -90,8 +92,11 @@ Slicing allows you to get a sub-list from a list. You specify a range of indices
 
 
 numbers = [0, 1, 2, 3, 4, 5]
+
 print(numbers[2:5])  # Output: [2, 3, 4]
+
 print(numbers[:3])   # Output: [0, 1, 2]
+
 print(numbers[3:])   # Output: [3, 4, 5]
 
 **Exercises:**
@@ -113,14 +118,21 @@ You can remove items from a list in several ways:
 
 
 fruits = ["apple", "banana", "cherry", "banana"]
+
 fruits.remove("banana")
+
 print(fruits)  # Output: ['apple', 'cherry', 'banana']
 
+
 removed_fruit = fruits.pop(1)
+
 print(removed_fruit) # Output: cherry
+
 print(fruits)      # Output: ['apple', 'banana']
 
+
 del fruits[0]
+
 print(fruits)      # Output: ['banana']
 
 **Exercises:**
@@ -137,10 +149,14 @@ You can sort the elements of a list in place using the `sort()` method.
 
 
 numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+
 numbers.sort()
+
 print(numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
 
+
 numbers.sort(reverse=True)
+
 print(numbers)  # Output: [9, 6, 5, 4, 3, 2, 1, 1]
 
 The `sorted()` function returns a new sorted list without modifying the original.
@@ -150,8 +166,11 @@ The `sorted()` function returns a new sorted list without modifying the origin
 
 
 numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+
 sorted_numbers = sorted(numbers)
+
 print(sorted_numbers) # Output: [1, 1, 2, 3, 4, 5, 6, 9]
+
 print(numbers)      # Output: [3, 1, 4, 1, 5, 9, 2, 6]
 
 **Exercises:**
@@ -174,11 +193,16 @@ List comprehensions provide a concise way to create lists. They consist of brack
 
 
 # Create a list of squares from 0 to 9
+
 squares = [x**2 for x in range(10)]
+
 print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
+
 # Create a list of even numbers from 0 to 9
+
 evens = [x for x in range(10) if x % 2 == 0]
+
 print(evens)    # Output: [0, 2, 4, 6, 8]
 
 **Exercises:**
@@ -217,10 +241,13 @@ Combining lists with loops and conditional statements allows for powerful data p
 
 
 numbers = [1, 15, -7, 8, 23, -4]
+
 positive_numbers = []
+
 for num in numbers:
     if num > 0:
         positive_numbers.append(num)
+        
 print(positive_numbers) # Output: [1, 15, 8, 23]
 
 **Exercises:**
