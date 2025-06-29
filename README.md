@@ -12,11 +12,12 @@ In Python, a list is an ordered collection of items. You can create a list by pl
 
 **Example:**
 
-Python
 
-`my_first_list = [1, 2, 3]
+my_first_list = [1, 2, 3]
+
 fruits = ["apple", "banana", "cherry"]
-mixed_list = [1, "hello", 3.14]`
+
+mixed_list = [1, "hello", 3.14]
 
 **Exercises:**
 
@@ -30,20 +31,18 @@ Each item in a list has an index, which is its position in the list. Python uses
 
 **Example:**
 
-Python
 
-`fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry"]
 print(fruits[0])  # Output: apple
-print(fruits[2])  # Output: cherry`
+print(fruits[2])  # Output: cherry
 
 You can also use negative indexing to access elements from the end of the list. `-1` refers to the last item, `-2` to the second to last, and so on.
 
 **Example:**
 
-Python
 
-`fruits = ["apple", "banana", "cherry"]
-print(fruits[-1]) # Output: cherry`
+fruits = ["apple", "banana", "cherry"]
+print(fruits[-1]) # Output: cherry
 
 **Exercises:**
 
@@ -57,21 +56,19 @@ You can add new items to a list using the `append()` method, which adds an ite
 
 **Example:**
 
-Python
 
-`fruits = ["apple", "banana"]
+fruits = ["apple", "banana"]
 fruits.append("cherry")
-print(fruits)  # Output: ['apple', 'banana', 'cherry']`
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
 To insert an item at a specific position, you can use the `insert()` method. It takes two arguments: the index and the value.
 
 **Example:**
 
-Python
 
-`fruits = ["apple", "cherry"]
+fruits = ["apple", "cherry"]
 fruits.insert(1, "banana")
-print(fruits)  # Output: ['apple', 'banana', 'cherry']`
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
 **Exercises:**
 
@@ -91,12 +88,11 @@ Slicing allows you to get a sub-list from a list. You specify a range of indices
 
 **Example:**
 
-Python
 
-`numbers = [0, 1, 2, 3, 4, 5]
+numbers = [0, 1, 2, 3, 4, 5]
 print(numbers[2:5])  # Output: [2, 3, 4]
 print(numbers[:3])   # Output: [0, 1, 2]
-print(numbers[3:])   # Output: [3, 4, 5]`
+print(numbers[3:])   # Output: [3, 4, 5]
 
 **Exercises:**
 
@@ -114,9 +110,9 @@ You can remove items from a list in several ways:
 
 **Example:**
 
-Python
 
-`fruits = ["apple", "banana", "cherry", "banana"]
+
+fruits = ["apple", "banana", "cherry", "banana"]
 fruits.remove("banana")
 print(fruits)  # Output: ['apple', 'cherry', 'banana']
 
@@ -125,7 +121,7 @@ print(removed_fruit) # Output: cherry
 print(fruits)      # Output: ['apple', 'banana']
 
 del fruits[0]
-print(fruits)      # Output: ['banana']`
+print(fruits)      # Output: ['banana']
 
 **Exercises:**
 
@@ -139,25 +135,24 @@ You can sort the elements of a list in place using the `sort()` method.
 
 **Example:**
 
-Python
 
-`numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 numbers.sort()
 print(numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
 
 numbers.sort(reverse=True)
-print(numbers)  # Output: [9, 6, 5, 4, 3, 2, 1, 1]`
+print(numbers)  # Output: [9, 6, 5, 4, 3, 2, 1, 1]
 
 The `sorted()` function returns a new sorted list without modifying the original.
 
 **Example:**
 
-Python
 
-`numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 sorted_numbers = sorted(numbers)
 print(sorted_numbers) # Output: [1, 1, 2, 3, 4, 5, 6, 9]
-print(numbers)      # Output: [3, 1, 4, 1, 5, 9, 2, 6]`
+print(numbers)      # Output: [3, 1, 4, 1, 5, 9, 2, 6]
 
 **Exercises:**
 
@@ -176,15 +171,15 @@ List comprehensions provide a concise way to create lists. They consist of brack
 
 **Example:**
 
-Python
 
-`# Create a list of squares from 0 to 9
+
+# Create a list of squares from 0 to 9
 squares = [x**2 for x in range(10)]
 print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 # Create a list of even numbers from 0 to 9
 evens = [x for x in range(10) if x % 2 == 0]
-print(evens)    # Output: [0, 2, 4, 6, 8]`
+print(evens)    # Output: [0, 2, 4, 6, 8]
 
 **Exercises:**
 
@@ -198,15 +193,15 @@ A nested list is a list that contains other lists.
 
 **Example:**
 
-Python
 
-`matrix = [
+
+matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 
-print(matrix[1][1]) # Output: 5`
+print(matrix[1][1]) # Output: 5
 
 **Exercises:**
 
@@ -220,14 +215,13 @@ Combining lists with loops and conditional statements allows for powerful data p
 
 **Example:**
 
-Python
 
-`numbers = [1, 15, -7, 8, 23, -4]
+numbers = [1, 15, -7, 8, 23, -4]
 positive_numbers = []
 for num in numbers:
     if num > 0:
         positive_numbers.append(num)
-print(positive_numbers) # Output: [1, 15, 8, 23]`
+print(positive_numbers) # Output: [1, 15, 8, 23]
 
 **Exercises:**
 
