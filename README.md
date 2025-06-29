@@ -73,7 +73,7 @@ text = "Hello, Python!"
 print(text[0:5])   # Output: Hello
 print(text[7:])    # Output: Python!
 print(text[:5])    # Output: Hello
-print(text[::2])   # Output: HloPto! (gets every second character)
+print(text[::2])   # Output: Hlo yhn (gets every second character)
 
 ```
 
