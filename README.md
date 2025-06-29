@@ -65,10 +65,10 @@ To insert an item at a specific position, you can use the `insert()` method. I
 
 **Example:**
 
-
+`
 fruits = ["apple", "cherry"]
 fruits.insert(1, "banana")
-print(fruits)  # Output: ['apple', 'banana', 'cherry']
+print(fruits)  # Output: ['apple', 'banana', 'cherry']`
 
 **Exercises:**
 
